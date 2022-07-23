@@ -1,0 +1,104 @@
+:root {
+    --bg-color: #fff;
+    --bg-color-gray: rgb(238, 238, 238);
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    background-color: var(--bg-color);
+}
+
+body {
+    background-color: var(--bg-color-gray);
+    margin: 2rem 1rem;
+    border-radius: 0.5rem;
+    padding: 2rem 1rem;
+}
+
+/* layout */
+
+/* img section */
+#img-div {
+    background-color: var(--bg-color);
+    padding: 1rem;
+}
+#img-div img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#img-caption {
+    margin-top: 1rem;
+}
+
+/* tribute info */
+
+#tribute-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+#tribute-info h2 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#tribute-info ul li {
+    margin: 1.5rem 0;
+    line-height: 1.5;
+}
+
+/* tribute quote */
+#tribute-quote {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+/* footer */
+footer {
+    margin-top: 3rem auto 0;
+}
+
+/* typo utils */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.font-40 {
+    font-size: 2.5rem;
+}
+
+.font-32 {
+    font-size: 2rem;
+}
+
+.font-24 {
+    font-size: 1.5rem;
+}
+
+.font-20 {
+    font-size: 1.2rem;
+}
+
+.font-16 {
+    font-size: 1rem;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.italic {
+    font-style: italic;
+}
