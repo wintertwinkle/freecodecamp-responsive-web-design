@@ -1,0 +1,87 @@
+:root {
+    --font-color: #4d4e53;
+    --code-bg-color: rgb(247, 247, 247);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* layout */
+
+/* nav bar */
+#navbar {
+    width: 20rem;
+    height: 100vh;
+    border-right: 3px solid gray;
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+
+#navbar header {
+    padding: 1rem 0 1rem 2rem;
+}
+
+.navlist {
+    overflow-y: scroll;
+}
+
+.navlist a {
+    display: block;
+    padding: 0.8rem 0 0.8rem 2rem;
+    font-size: 1.1rem;
+    color: var(--font-color);
+    text-decoration: none;
+    border-top: 1px solid var(--font-color);
+}
+
+.navlist a:visited {
+    color: var(4d4e53)
+}
+
+/* main-doc */
+
+#main-doc {
+    position: absolute;
+    left: 20rem;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+
+
+header {
+    font-size: 2rem;
+    font-style: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    color: var(--font-color);
+    line-height: 1.5;
+}
+
+li {
+    font-size: 1.1rem;
+    color: var(--font-color);
+    line-height: 1.5;
+}
+
+code {
+    background-color: var(--code-bg-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 1rem auto;
+}
