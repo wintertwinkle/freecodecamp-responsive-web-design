@@ -1,0 +1,312 @@
+:root {
+    /* global color variables */
+    --bg-color-1: #eee;
+    --bg-color-2: #ddd;
+    --font-normal-color: #000;
+    --icon-color: darkorange;
+    --input-color: #f1c40f;
+    --input-hover-color: orange;
+    /* global font-size variables */
+    --font-size-head: 2.4rem;
+    --font-size-normal: 1.6rem;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color-1);
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* header */
+#header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bg-color-1);
+}
+
+.logo {
+    width: 60vw;
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#nav-bar {
+    font-size: 1.6rem;
+}
+
+#nav-bar ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+}
+
+#nav-bar ul li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+}
+li a:visited {
+    color: var(--font-normal-color);
+}
+
+/* main */
+
+/* main-form */
+
+#main {
+    width: 100%;
+    max-width: 960px;
+    margin: 8rem auto 0;
+}
+
+.form-sec {
+    text-align: center;
+}
+
+.form-sec h1 {
+    font-size: var(--font-size-head);
+    padding: 0 0.5rem;
+}
+
+.form-sec input {
+    display: block;
+    margin: 0 auto 2rem;
+    padding: 0.5rem 0.2rem;
+    border: none;
+    border-radius: 2px;
+}
+
+input[type="email"] {
+    width: 25rem;
+    padding-left: 1rem;
+    border: 1px solid #999;
+}
+
+input[type="submit"] {
+    width: 14rem;
+    background-color: var(--input-color);
+    font-size: var(--font-size-normal);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--input-hover-color);
+}
+
+/* main - features */
+.features-sec {
+    margin-top: 5rem;
+}
+
+.features-sec .feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.feature .icon {
+    width: 18%;
+    text-align: center;
+    font-size: var(--font-size-normal);
+    color: var(--icon-color);
+}
+
+.feature .desc {
+    width: 82%;
+    padding-right: 2rem;
+}
+.desc h2 {
+    font-size: var(--font-size-head);
+    margin: 0;
+}
+.desc p {
+    font-size: var(--font-size-normal);
+    margin: 0;
+}
+
+/* main - videos */
+.video-sec {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+#video {
+    width: 100%;
+    max-width: 560px;
+}
+
+/* main product */
+.product-sec {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 32%;
+    min-width: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.card .title {
+    width: 100%;
+    padding: 1.5rem 0;
+    margin: 0;
+    background-color: var(--bg-color-2);
+    font-size: var(--font-size-normal);
+    text-align: center;
+}
+
+.card .price {
+    font-size: var(--font-size-head);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card .text {
+    margin-bottom: 2rem;
+    font-size: var(--font-size-normal);
+    text-align: center;
+}
+
+.card .text p {
+    margin: 1rem auto;
+    line-height: 1.1;
+}
+
+.card button {
+    padding: 1rem 3rem;
+    border: none;
+    margin-bottom: 2rem;
+    font-size: var(--font-size-normal);
+    background-color: var(--input-color);
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: var(--input-hover-color);
+}
+
+/* footer */
+footer {
+    width: 100%;
+    max-width: 960px;
+    margin: 3rem auto 0;
+    padding: 15px;
+    background-color: var(--bg-color-2);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+footer ul li {
+    display: block;
+    padding: 0 1rem;
+    list-style: none;
+    font-size: var(--font-size-normal);
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    color: #444;
+}
+
+/* responsive design */
+
+
+/* which parts should be responsive */
+@media only screen and (max-width: 800px) {
+    /* product */
+    .product-sec {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-sec .card {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    /* header */
+    #nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    /* header */
+    #header {
+        flex-wrap: wrap;
+    }
+
+    #header li {
+        padding-bottom: 5px;
+    }
+
+    #main {
+        margin-top: 14rem;
+    }
+    /* features */
+    .feature .desc {
+        text-align: center;
+        width: 100%;
+    }
+    .feature .icon {
+        display: none;
+    }
+}
+
+
+
+
+
